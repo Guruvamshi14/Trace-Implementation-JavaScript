@@ -21,7 +21,7 @@ const {
 
 const sdk = new opentelemetry.NodeSDK({
     resource: resourceFromAttributes({
-        [ATTR_SERVICE_NAME]: 'dice-server',
+        [ATTR_SERVICE_NAME]: 'Trace-Implementation-JavaScript',
         [ATTR_SERVICE_VERSION]: '0.1.0',
       }),
   traceExporter: new OTLPTraceExporter({
